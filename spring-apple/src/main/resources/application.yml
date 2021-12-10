@@ -1,0 +1,41 @@
+person:
+  userName: 张三
+  boss: true
+  birth: 2021/9/16
+  age: 18
+  pet:
+    {name:小白,weight:99.99}
+  interests:
+    - 游泳
+    - 羽毛球
+  animal: [小白,小黑]
+  score:
+    english: 90
+    chinese: 100
+  salarys:
+    - 99.99
+    - 88.88
+  allPets:
+    sick:
+      - name: 小白
+        weight: 99.99
+      - name: 小黑
+        weight: 99.99
+    health:
+      - name: 小白
+        weight: 99.99
+      - name: 小黑
+        weight: 99.99
+
+#   指定静态文件夹前缀
+spring:
+  mvc:
+    static-path-pattern: /resources/**
+#  指定静态文件加目录
+#  resources:
+#    static-locations: /haha/
+
+server:
+  servlet:
+    context-path: /lyx
+  port: 2905
